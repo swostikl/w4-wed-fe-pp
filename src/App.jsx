@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Registration from "./components/Registration";
+import Layout from "./components/Layout";
 import "./App.css";
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       <Header />
       <Hero />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path ="/" element = {<Layout/>} />
+        <Route index element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/tours" element={<Tours />} />
         <Route path="/about" element={<About />} />
