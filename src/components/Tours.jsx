@@ -26,6 +26,7 @@ const Tours = () => {
           return <Tour key={tour.id} {...tour} onRemove={removeTour} />;
         })}
       </div>
+      <button onClick={restoreTours}>Restore All Tours</button>
     </section>
   );
 };

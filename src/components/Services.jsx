@@ -24,6 +24,7 @@ const Services = () => {
           return <Service {...service} key={service.id} onRemove={removeService} />
         })}
       </div>
+      <button onClick={restoreServices}>Restore All Services</button>
     </section>
   )
 }

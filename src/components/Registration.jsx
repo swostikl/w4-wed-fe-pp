@@ -6,24 +6,24 @@ function Registration() {
   const [phone, setPhone] = useState("");
 
 
-const onSubmit = e =>{
-    e.preventDefault();
+  const onSubmit = e =>{
+      e.preventDefault();
 
-    const contactUsInformation = {
-        name,
-        email,
-        phone
+      const contactUsInformation = {
+          name,
+          email,
+          phone
 
+      };
+
+      console.log(contactUsInformation);
+
+      
+      // Reset the form state.
+      setName('');
+      setEmail('');
+      setPhone('');
     };
-
-    console.log(contactUsInformation);
-
-    
-    // Reset the form state.
-    setName('');
-    setEmail('');
-    setPhone('');
-    
 
   return (
     <div>
@@ -62,6 +62,5 @@ const onSubmit = e =>{
       </form>
     </div>
   );
-};
 }
 export default Registration;
