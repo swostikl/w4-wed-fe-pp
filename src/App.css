@@ -154,9 +154,33 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover {
+.btn:hover, 
+.remove-btn:hover {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
+}
+
+.remove-btn {
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.remove-btn img {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.restore-btn {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* section */
@@ -309,6 +333,7 @@ Services
 .service {
   text-align: center;
   margin-bottom: 3rem;
+  position: relative;
 }
 
 .service-icon {
@@ -383,6 +408,7 @@ Featured Tours
   background: var(--clr-grey-10);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .tour-card:hover {
@@ -674,6 +700,7 @@ header {
 
   .nav-icon:hover {
     color: var(--clr-primary-8);
+    transform: scale(1.2);
   }
 }
 

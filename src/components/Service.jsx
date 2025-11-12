@@ -1,3 +1,5 @@
+import deleteIcon from '../assets/images/delete.png';
+
 const Service = ({ icon, title, text, details, onRemove, id }) => {
   return (
     <article className='service'>
@@ -9,7 +11,7 @@ const Service = ({ icon, title, text, details, onRemove, id }) => {
         <p className='service-text'>{text}</p>
         {details && <p className='service-details'>{details}</p>}
       </div>
-      <button className='btn remove-btn' onClick={() => onRemove(id)}>Remove</button>
+      <button className='btn remove-btn' onClick={() => onRemove(id)}><img src={deleteIcon} alt="Delete" /></button>
     </article>
   )
 }
