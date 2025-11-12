@@ -1,6 +1,18 @@
-import deleteIcon from '../assets/images/delete.png';
+import deleteIcon from "../assets/images/delete.png";
 
-function Tour({ image, date, title, info, location, duration, cost, difficulty, rating, id, onRemove }) {
+function Tour({
+  image,
+  date,
+  title,
+  info,
+  location,
+  duration,
+  cost,
+  difficulty,
+  rating,
+  id,
+  onRemove,
+}) {
   return (
     <article className="tour-card">
       <div className="tour-img-container">
@@ -24,7 +36,9 @@ function Tour({ image, date, title, info, location, duration, cost, difficulty, 
           <p>from {cost}</p>
           <p>{duration} days</p>
         </div>
-        <button className='btn remove-btn' onClick={() => onRemove(id)}><img src={deleteIcon} alt="Delete" /></button>
+        <button className="btn remove-btn" onClick={() => onRemove(id)}>
+          <img src={deleteIcon} alt="Delete" />
+        </button>
       </div>
     </article>
   );

@@ -1,21 +1,19 @@
 import { tours } from "../data";
-import { useState } from 'react';
+import { useState } from "react";
 import Title from "./Title";
 import Tour from "./Tour";
 
-
 const Tours = () => {
-  const [toursData, setToursData]= useState(tours);
+  const [toursData, setToursData] = useState(tours);
 
   const removeTour = (id) => {
-    const filteredTours = toursData.filter(tour => tour.id !== id);
+    const filteredTours = toursData.filter((tour) => tour.id !== id);
     setToursData(filteredTours);
   };
 
   const restoreTours = () => {
     setToursData(tours);
   };
-
 
   return (
     <section className="section tours" id="tours">
@@ -26,8 +24,10 @@ const Tours = () => {
           return <Tour key={tour.id} {...tour} onRemove={removeTour} />;
         })}
       </div>
-      <div className='restore-btn'>
-        <button className='btn' onClick={restoreTours}>Restore All Tours</button>
+      <div className="restore-btn">
+        <button className="btn" onClick={restoreTours}>
+          Restore All Tours
+        </button>
       </div>
     </section>
   );

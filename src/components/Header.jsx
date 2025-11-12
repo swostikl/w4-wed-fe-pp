@@ -1,5 +1,5 @@
-import Navbar from './Navbar';
-import logo from '../assets/images/logo.svg'
+import Navbar from "./Navbar";
+import logo from "../assets/images/logo.svg";
 
 function Header() {
   return (

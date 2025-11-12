@@ -1,7 +1,7 @@
 import { socialLinks } from "../data";
 import SocialLink from "./SocialLink";
 
-const SocialLinks = ({ parentClass, itemClass }) =>  {
+const SocialLinks = ({ parentClass, itemClass }) => {
   return (
     <ul className={parentClass} id="social-links">
       {socialLinks.map((link) => {
@@ -9,6 +9,6 @@ const SocialLinks = ({ parentClass, itemClass }) =>  {
       })}
     </ul>
   );
-}
+};
 
 export default SocialLinks;

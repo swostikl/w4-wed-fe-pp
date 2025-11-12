@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Hero />
       <Routes>
-        <Route path ="/" element = {<Layout/>} />
+        <Route path="/" element={<Layout />} />
         <Route index element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/tours" element={<Tours />} />
@@ -28,7 +28,6 @@ function App() {
       <Footer />
     </BrowserRouter>
   );
-  
 }
 
 export default App;

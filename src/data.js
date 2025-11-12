@@ -5,7 +5,6 @@ import tour4 from "./assets/images/tour-4.jpeg";
 import tour5 from "./assets/images/tour-1.jpeg";
 import tour6 from "./assets/images/tour-2.jpeg";
 import tour7 from "./assets/images/tour-3.jpeg";
-import { href } from "react-router-dom";
 
 export const pageLinks = [
   { id: 1, href: "/", text: "home" },

@@ -5,25 +5,22 @@ function Registration() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
 
+  const onSubmit = (e) => {
+    e.preventDefault();
 
-  const onSubmit = e =>{
-      e.preventDefault();
-
-      const contactUsInformation = {
-          name,
-          email,
-          phone
-
-      };
-
-      console.log(contactUsInformation);
-
-      
-      // Reset the form state.
-      setName('');
-      setEmail('');
-      setPhone('');
+    const contactUsInformation = {
+      name,
+      email,
+      phone,
     };
+
+    console.log(contactUsInformation);
+
+    // Reset the form state.
+    setName("");
+    setEmail("");
+    setPhone("");
+  };
 
   return (
     <div>
@@ -56,9 +53,8 @@ function Registration() {
             onChange={(e) => setPhone(e.target.value)}
             value={phone}
           />
-          </div>
-          <button> Submit</button>
-    
+        </div>
+        <button> Submit</button>
       </form>
     </div>
   );
