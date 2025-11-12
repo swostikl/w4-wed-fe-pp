@@ -10,7 +10,6 @@ const Navbar = () => {
       <PageLinks parentClass="nav-links" itemClass="nav-link" />
       <SocialLinks parentClass="nav-icons" itemClass="nav-icon" />
 
-      <Link to="/Registration">Registration</Link>
     </>
   );
 };
