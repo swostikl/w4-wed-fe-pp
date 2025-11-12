@@ -23,38 +23,52 @@ function Registration() {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h2>Registration form</h2>
-      <form onSubmit={onSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+      <form className="form" onSubmit={onSubmit}>
+        <div className="form-group">
+          <label className="form-label" htmlFor="name">
+            Name:
+          </label>
           <input
+            className="form-input"
             id="name"
             type="text"
             onChange={(e) => setName(e.target.value)}
             value={name}
+            required
           />
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
+        <div className="form-group">
+          <label className="form-label" htmlFor="email">
+            Email:
+          </label>
           <input
+            className="form-input"
             id="email"
-            type="text"
+            type="email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
+            required
           />
         </div>
 
-        <div>
-          <label htmlFor="phone">Phone:</label>
+        <div className="form-group">
+          <label className="form-label" htmlFor="phone">
+            Phone:
+          </label>
           <input
+            className="form-input"
             id="phone"
-            type="text"
+            type="tel"
             onChange={(e) => setPhone(e.target.value)}
             value={phone}
+            required
           />
         </div>
-        <button> Submit</button>
+        <button className="btn" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );
