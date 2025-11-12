@@ -1,8 +1,5 @@
 import PageLinks from './PageLinks';
 import SocialLinks from './SocialLinks';
-import Registration from './Registration';
-import {Link} from "react-router-dom";
-import React from "react";
 
 const Navbar = () => {
   return (
